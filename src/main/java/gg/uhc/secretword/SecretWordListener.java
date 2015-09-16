@@ -49,9 +49,6 @@ public class SecretWordListener implements Listener {
 
         event.getPlayer().sendMessage(ChatColor.AQUA + "Please enter the secret word for this game in chat within " + configuration.getSecondsBeforeKick() + " otherwise you will be kicked");
 
-        // add to waiting list to stop messages
-        waiting.add(joiningUUID);
-
         // start a task that will add violations/kick as needed
         WaitForMessageTask task = new WaitForMessageTask(joiningUUID);
         task.runTaskLater(plugin, configuration.getSecondsBeforeKick() * 20);
