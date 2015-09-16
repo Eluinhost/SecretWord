@@ -1,0 +1,15 @@
+name: SecretWord
+main: gg.uhc.secretword.Entry
+version: 1.0-SNAPSHOT
+author: ghowden/Eluinhost
+database: false
+commands:
+  secretword:
+    description: Sets the secret word
+    usage: /<command> <word>
+    permission: uhc.secretword
+permissions:
+  uhc.secretword.command:
+    default: op
+  uhc.secretworld.immune:
+    default: op
