@@ -1,6 +1,6 @@
 name: SecretWord
 main: gg.uhc.secretword.Entry
-version: 1.0.0
+version: 1.0.1
 author: ghowden/Eluinhost
 database: false
 commands:
